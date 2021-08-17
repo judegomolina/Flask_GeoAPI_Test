@@ -1,0 +1,7 @@
+.git
+.cache
+*.md
+__pycache__/
+.vscode/
+.pytest_cache/
+*.log
