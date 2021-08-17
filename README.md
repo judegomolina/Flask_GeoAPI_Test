@@ -33,7 +33,9 @@ However, a list of the required modules is can be found below.
 The way you are going to run this project depends on if you will use the Docker container or not, if you will then you need to run the following command from the command prompt while you are located in the folder:
 
 > docker-compose up --build # if this is the first time you run the container
+>
 > or
+>
 > docker-compose up # if you have previously built the image
 
 Now, if you are not using docker to run the project you can just run the main.py file from the command prompt or your favorite text editor; however, please take into account that if you want to use this code in a production environment you should configure a WSGI server for the application.
@@ -50,3 +52,7 @@ Once the application is up and running you can make a request to it with the fol
 > data = {'address': 'Caracas, Venezuela'}
 >
 > r = requests.post(url, data=json.dumps(data), headers={'Content-Type': 'application/json'})
+
+## Running the tests
+
+The application has a predefined unittests and functional testas that you can easily run with the 'pytest' command from within the project folder.
